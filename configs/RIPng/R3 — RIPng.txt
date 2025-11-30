@@ -1,0 +1,11 @@
+ipv6 unicast-routing
+!
+interface f0/0
+ ipv6 address 2001:DB8:CAFE:4::1/64
+ ipv6 rip RIPNG enable
+!
+interface s0/3/0
+ ipv6 address 2001:DB8:CAFE:E::1/127
+ ipv6 rip RIPNG enable
+!
+ipv6 router rip RIPNG

@@ -1,9 +1,4 @@
 # UNIBRAS - Projeto de Redes de Computadores
-
-<p align="center">
-  <a href="https://sejaunibras.com.br"><img src="assets/unibras-logo.png" alt="UNIBRAS Logo" border="0" width="70%" /></a>
-</p>
-
 ## Configuração e Análise dos Protocolos de Roteamento Dinâmico IPv6
 ### RIPng, EIGRPv6 e OSPFv3
 

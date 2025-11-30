@@ -12,7 +12,7 @@
 **Redes de Computadores**
 
 ### 👨‍🎓 Aluno
-- José [Seu Sobrenome]
+- José Antônio dos Santos Filho
 
 ### 👨‍🏫 Orientador
 - Prof. Francismar Alves Martins Junior

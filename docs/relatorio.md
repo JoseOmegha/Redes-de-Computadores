@@ -1,11 +1,11 @@
 # Relatório Técnico — Protocolos de Roteamento Dinâmico IPv6
-## RIPng, EIGRPv6 e OSPFv3
+## EIGRPv6, OSPFv3 e RIPng
 
 ### 📚 Disciplina
 Redes de Computadores
 
 ### 👨‍🎓 Aluno
-José [Seu Sobrenome]
+José Antônio dos Santos Filho
 
 ### 👨‍🏫 Orientador
 Prof. Francismar Alves Martins Junior
@@ -13,7 +13,7 @@ Prof. Francismar Alves Martins Junior
 ---
 
 ## 📝 Resumo
-Este trabalho prático implementa e compara três protocolos de roteamento dinâmico em IPv6: **RIPng**, **EIGRPv6** e **OSPFv3**, em uma topologia composta por três roteadores interligados em série. Cada roteador possui uma interface loopback representando uma rede local e enlaces seriais ponto-a-ponto. O objetivo é configurar, verificar e analisar o funcionamento de cada protocolo, validando a conectividade entre todas as redes.
+Este trabalho prático implementa e compara três protocolos de roteamento dinâmico em IPv6: **EIGRPv6**, **OSPFv3** e **RIPng**, em uma topologia composta por três roteadores interligados em série. Cada roteador possui uma interface loopback representando uma rede local e enlaces seriais ponto-a-ponto. O objetivo é configurar, verificar e analisar o funcionamento de cada protocolo, validando a conectividade entre todas as redes.
 
 ---
 
@@ -38,14 +38,6 @@ Este trabalho prático implementa e compara três protocolos de roteamento dinâ
 
 ## 🔹 Configuração dos Protocolos
 
-### RIPng
-- **Tipo:** Vetor de distância  
-- **Métrica:** Número de saltos  
-- **Configuração:** habilitado por interface com `ipv6 rip RIPNG enable`  
-- **Verificação:**  
-  - `show ipv6 rip`  
-  - `show ipv6 route rip`  
-
 ### EIGRPv6
 - **Tipo:** Híbrido (DUAL)  
 - **AS Number:** 10  
@@ -53,6 +45,8 @@ Este trabalho prático implementa e compara três protocolos de roteamento dinâ
 - **Verificação:**  
   - `show ipv6 eigrp neighbors`  
   - `show ipv6 route eigrp`  
+
+---
 
 ### OSPFv3
 - **Tipo:** Estado de enlace  
@@ -64,20 +58,30 @@ Este trabalho prático implementa e compara três protocolos de roteamento dinâ
 
 ---
 
+### RIPng
+- **Tipo:** Vetor de distância  
+- **Métrica:** Número de saltos  
+- **Configuração:** habilitado por interface com `ipv6 rip RIPNG enable`  
+- **Verificação:**  
+  - `show ipv6 rip`  
+  - `show ipv6 route rip`  
+
+---
+
 ## 📊 Resultados e Análise
 
-- **RIPng:** Funcionou corretamente, mas apresenta convergência lenta e limitação de saltos.  
 - **EIGRPv6:** Convergência rápida, vizinhanças formadas corretamente, rotas aprendidas com sucesso.  
 - **OSPFv3:** Escalabilidade alta, vizinhanças estáveis, rotas aprendidas e banco de dados LSA completo.  
+- **RIPng:** Funcionou corretamente, mas apresenta convergência lenta e limitação de saltos.  
 - **Testes de conectividade:** Todos os roteadores conseguiram ping e traceroute entre as loopbacks.  
 
 ---
 
 ## 🎓 Conclusões
 
-1. **RIPng** é útil para aprendizado inicial, mas limitado para redes grandes.  
-2. **EIGRPv6** oferece bom desempenho e convergência rápida, ideal para redes médias.  
-3. **OSPFv3** é o protocolo mais robusto e escalável, padrão em ambientes corporativos.  
+1. **EIGRPv6** oferece bom desempenho e convergência rápida, ideal para redes médias.  
+2. **OSPFv3** é o protocolo mais robusto e escalável, padrão em ambientes corporativos.  
+3. **RIPng** é útil para aprendizado inicial, mas limitado para redes grandes.  
 4. Todos os protocolos garantiram comunicação plena entre as redes IPv6 configuradas.  
 
 ---
@@ -87,9 +91,9 @@ Este trabalho prático implementa e compara três protocolos de roteamento dinâ
 - [x] Topologia com 3 roteadores  
 - [x] Interfaces loopback configuradas  
 - [x] Roteamento IPv6 habilitado  
-- [x] RIPng configurado e testado  
 - [x] EIGRPv6 configurado e testado  
 - [x] OSPFv3 configurado e testado  
+- [x] RIPng configurado e testado  
 - [x] Conectividade validada (ping/traceroute)  
 - [x] Repositório GitHub organizado  
 - [x] Vídeo demonstrativo no YouTube  
@@ -111,7 +115,7 @@ Este trabalho prático implementa e compara três protocolos de roteamento dinâ
 ## 📋 Informações Importantes
 
 - **Instituição:** UNIBRAS  
-- **Aluno:** José [Seu Sobrenome]  
+- **Aluno:** José Antônio dos Santos Filho
 - **Orientador:** Prof. Francismar Alves Martins Junior  
 - **Simulador:** Cisco Packet Tracer  
 - **Data de Conclusão:** 30 de novembro de 2025  

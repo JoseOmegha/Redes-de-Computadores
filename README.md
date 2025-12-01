@@ -164,7 +164,7 @@ roteamento-ipv6/
 - [x] OSPFv3 configurado e testado
 - [x] Conectividade validada (ping/traceroute)
 - [x] Repositório GitHub organizado
-- [x] Vídeo demonstrativo no YouTube
+- [ ] Vídeo demonstrativo no YouTube
 
 ---
 
